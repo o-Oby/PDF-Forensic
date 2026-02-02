@@ -1,4 +1,4 @@
-# PDF Forensic Laboratory
+# PDF Forensic 
 
 > **[Lire en Français](README_FR.md)**
 
@@ -114,13 +114,13 @@ The report contains:
 
 ```
 ╔══════════════════════════════════════════════════════════════╗
-║                   PDF FORENSIC LABORATORY                     ║
-║                         Version 1.0                           ║
+║                         PDF FORENSIC                         ║
+║                         Version 1.0                          ║
 ╚══════════════════════════════════════════════════════════════╝
 
 ┌─ File ────────────────────────────────────────────────────────┐
 │  document.pdf                                                 │
-│  SHA-256: b710553de8199997bac8d40c4bbf50688ee10c5eb7e13d...  │
+│  SHA-256: b710553de8199997bac8d40c4bbf50688ee10c5eb7e13d...   │
 │  Revisions: 3 | Objects: 48                                   │
 └───────────────────────────────────────────────────────────────┘
 
