@@ -6,7 +6,7 @@ Outil d'analyse forensique de documents PDF. Détecte les modifications, révisi
 
 ## Fonctionnalites
 
-- **Analyse des r&visions** : Détection de tous les etats de sauvegarde (%%EOF)
+- **Analyse des révisions** : Détection de tous les etats de sauvegarde (%%EOF)
 - **Comparaison de texte** : Diff entre chaque révision
 - **Evolution des metadonnees** : Suivi des modifications CreationDate, ModifyDate, Producer, Creator
 - **D&tection de polices** : Alertes si les polices changent entre révisions
