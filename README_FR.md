@@ -2,25 +2,25 @@
 
 > **[Read in English](README.md)**
 
-Outil d'analyse forensique de documents PDF. Detecte les modifications, revisions cachees, pieces jointes, scripts et anomalies structurelles.
+Outil d'analyse forensique de documents PDF. Détecte les modifications, révisions cachées, pièces jointes, scripts et anomalies structurelles.
 
 ## Fonctionnalites
 
-- **Analyse des revisions** : Detection de tous les etats de sauvegarde (%%EOF)
-- **Comparaison de texte** : Diff entre chaque revision
+- **Analyse des revisions** : Détection de tous les etats de sauvegarde (%%EOF)
+- **Comparaison de texte** : Diff entre chaque révision
 - **Evolution des metadonnees** : Suivi des modifications CreationDate, ModifyDate, Producer, Creator
-- **Detection de polices** : Alertes si les polices changent entre revisions
-- **Pieces jointes** : Extraction et listage des fichiers embarques
-- **Scripts/Actions** : Detection de JavaScript, OpenAction, AA
-- **Texte invisible** : Detection du mode de rendu 3 (texte cache)
-- **Signatures logicielles** : Detection UPDF, Adobe, Nitro, Foxit, etc.
+- **Detection de polices** : Alertes si les polices changent entre révisions
+- **Pieces jointes** : Extraction et listage des fichiers embarqués
+- **Scripts/Actions** : Détection de JavaScript, OpenAction, AA
+- **Texte invisible** : Détection du mode de rendu 3 (texte cache)
+- **Signatures logicielles** : Détection UPDF, Adobe, Nitro, Foxit, etc.
 - **OCR** : Extraction de texte depuis les images (Tesseract)
-- **Bordures** : Verification MediaBox vs CropBox (texte hors marges)
+- **Bordures** : Vérification MediaBox vs CropBox (texte hors marges)
 - **Rapport HTML** : Rapport interactif avec bouton d'impression/export PDF
 
 ## Installation
 
-### Dependances requises
+### Dépendances requises
 
 ```bash
 # macOS (Homebrew)
@@ -56,7 +56,7 @@ sudo dnf install perl-Image-ExifTool poppler-utils qpdf tesseract
 
 ### Export PDF
 
-Le rapport HTML genere inclut un bouton "Imprimer / PDF". Cliquez dessus pour :
+Le rapport HTML génere inclut un bouton "Imprimer / PDF". Cliquez dessus pour :
 - Imprimer le rapport directement
 - Sauvegarder en PDF (selectionnez "Enregistrer au format PDF" dans la boite de dialogue d'impression)
 
@@ -69,7 +69,7 @@ PDF-Forensic/
 │   ├── core/
 │   │   ├── constants.sh     # Couleurs, versions
 │   │   ├── utils.sh         # Fonctions utilitaires
-│   │   └── state.sh         # Variables partagees
+│   │   └── state.sh         # Variables partagées
 │   ├── i18n/
 │   │   ├── loader.sh        # Chargeur de langue
 │   │   ├── fr.sh            # Traductions FR
@@ -78,23 +78,23 @@ PDF-Forensic/
 │   │   ├── parser.sh        # Parsing arguments
 │   │   └── prompts.sh       # Prompts interactifs
 │   └── deps/
-│       └── checker.sh       # Verification dependances
+│       └── checker.sh       # Vérification dependances
 └── modules/
     ├── analysis/
     │   ├── structural.sh    # Analyse DNA (EOF, objets)
     │   ├── boundaries.sh    # MediaBox/CropBox
-    │   ├── attachments.sh   # Pieces jointes
-    │   ├── javascript.sh    # Detection JS/Actions
+    │   ├── attachments.sh   # Pièces jointes
+    │   ├── javascript.sh    # Détection JS/Actions
     │   └── markers.sh       # Signatures, texte invisible
     ├── revisions/
-    │   ├── extractor.sh     # Extraction revisions
+    │   ├── extractor.sh     # Extraction révisions
     │   ├── differ.sh        # Diff text/meta/fonts
     │   └── images.sh        # Images + OCR
     └── report/
         ├── html/
         │   ├── template.sh  # CSS + header HTML
         │   ├── sections.sh  # Generateurs sections
-        │   └── summary.sh   # Resume
+        │   └── summary.sh   # Résumé
         └── export/
             └── cleanup.sh   # Nettoyage
 ```
@@ -103,12 +103,12 @@ PDF-Forensic/
 
 Le rapport contient :
 
-1. **Resume** : Tableau recapitulatif de toutes les modifications
-2. **Integrite** : Hash SHA-256, nombre de revisions
-3. **Analyse DNA** : Objets PDF, detection de sauts d'index suspects
-4. **Chronologie des revisions** : Diff detaille pour chaque revision
-5. **Galerie d'images** : Images extraites avec OCR et metadonnees EXIF
-6. **Signatures logicielles** : Outils utilises pour creer/modifier le PDF
+1. **Résume** : Tableau recapitulatif de toutes les modifications
+2. **Integrité** : Hash SHA-256, nombre de révisions
+3. **Analyse DNA** : Objets PDF, détection de sauts d'index suspects
+4. **Chronologie des revisions** : Diff détaillée pour chaque révision
+5. **Galerie d'images** : Images extraites avec OCR et metadonnées EXIF
+6. **Signatures logicielles** : Outils utilisés pour créer/modifier le PDF
 
 ## Exemple de sortie terminal
 
@@ -140,7 +140,7 @@ Le rapport contient :
 
 ## Ajouter une langue
 
-1. Creer `lib/i18n/de.sh` (copier `en.sh` comme base)
+1. Créer `lib/i18n/de.sh` (copier `en.sh` comme base)
 2. Renommer la fonction en `pf_init_translations_de`
 3. Traduire toutes les variables `T_*`
 4. Ajouter le cas dans `lib/i18n/loader.sh`
@@ -151,4 +151,5 @@ MIT License
 
 ## Auteur
 
-PDF Forensic Laboratory - Outil d'investigation numerique
+Médéric D.
+PDF Forensic - Outil d'investigation numérique
