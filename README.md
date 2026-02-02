@@ -151,4 +151,4 @@ MIT License
 
 ## Author
 
-PDF Forensic Laboratory - Digital forensics tool
+Médéric D.
