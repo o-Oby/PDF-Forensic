@@ -1,4 +1,4 @@
-# PDF Forensic Laboratory
+# PDF Forensic
 
 > **[Read in English](README.md)**
 
@@ -6,11 +6,11 @@ Outil d'analyse forensique de documents PDF. Détecte les modifications, révisi
 
 ## Fonctionnalites
 
-- **Analyse des revisions** : Détection de tous les etats de sauvegarde (%%EOF)
+- **Analyse des r&visions** : Détection de tous les etats de sauvegarde (%%EOF)
 - **Comparaison de texte** : Diff entre chaque révision
 - **Evolution des metadonnees** : Suivi des modifications CreationDate, ModifyDate, Producer, Creator
-- **Detection de polices** : Alertes si les polices changent entre révisions
-- **Pieces jointes** : Extraction et listage des fichiers embarqués
+- **D&tection de polices** : Alertes si les polices changent entre révisions
+- **Pièces jointes** : Extraction et listage des fichiers embarqués
 - **Scripts/Actions** : Détection de JavaScript, OpenAction, AA
 - **Texte invisible** : Détection du mode de rendu 3 (texte cache)
 - **Signatures logicielles** : Détection UPDF, Adobe, Nitro, Foxit, etc.
