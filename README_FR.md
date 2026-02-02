@@ -93,7 +93,7 @@ PDF-Forensic/
     └── report/
         ├── html/
         │   ├── template.sh  # CSS + header HTML
-        │   ├── sections.sh  # Generateurs sections
+        │   ├── sections.sh  # Générateurs sections
         │   └── summary.sh   # Résumé
         └── export/
             └── cleanup.sh   # Nettoyage
@@ -103,10 +103,10 @@ PDF-Forensic/
 
 Le rapport contient :
 
-1. **Résume** : Tableau recapitulatif de toutes les modifications
+1. **Résumé** : Tableau recapitulatif de toutes les modifications
 2. **Integrité** : Hash SHA-256, nombre de révisions
 3. **Analyse DNA** : Objets PDF, détection de sauts d'index suspects
-4. **Chronologie des revisions** : Diff détaillée pour chaque révision
+4. **Chronologie des révisions** : Diff détaillée pour chaque révision
 5. **Galerie d'images** : Images extraites avec OCR et metadonnées EXIF
 6. **Signatures logicielles** : Outils utilisés pour créer/modifier le PDF
 
