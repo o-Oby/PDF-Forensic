@@ -1,0 +1,21 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IDE
+.vscode/
+*.code-workspace
+.idea/
+
+# Claude Code
+.claude/
+
+# Output directories (generated during analysis)
+lab_forensic_*/
+
+# Test files
+*.pdf
+
+# Legacy files
+*-legacy.sh
