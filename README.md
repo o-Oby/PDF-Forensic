@@ -1,24 +1,24 @@
 # PDF Forensic Laboratory
 
-Outil d'analyse forensique de documents PDF. Detecte les modifications, revisions cachees, pieces jointes, scripts et anomalies structurelles.
+Outil d'analyse forensique de documents PDF. Détecte les modifications, révisions cachees, pièces jointes, scripts et anomalies structurelles.
 
 ## Fonctionnalites
 
-- **Analyse des revisions** : Detection de tous les etats de sauvegarde (%%EOF)
+- **Analyse des revisions** : Détection de tous les états de sauvegarde (%%EOF)
 - **Comparaison de texte** : Diff entre chaque revision
 - **Evolution des metadonnees** : Suivi des modifications CreationDate, ModifyDate, Producer, Creator
-- **Detection de polices** : Alertes si les polices changent entre revisions
-- **Pieces jointes** : Extraction et listage des fichiers embarques
-- **Scripts/Actions** : Detection de JavaScript, OpenAction, AA
-- **Texte invisible** : Detection du mode de rendu 3 (texte cache)
-- **Signatures logicielles** : Detection UPDF, Adobe, Nitro, Foxit, etc.
+- **Detection de polices** : Alertes si les polices changent entre révisions
+- **Pieces jointes** : Extraction et listage des fichiers embarqués
+- **Scripts/Actions** : Détection de JavaScript, OpenAction, AA
+- **Texte invisible** : Détection du mode de rendu 3 (texte cache)
+- **Signatures logicielles** : Détection UPDF, Adobe, Nitro, Foxit, etc.
 - **OCR** : Extraction de texte depuis les images (Tesseract)
-- **Bordures** : Verification MediaBox vs CropBox (texte hors marges)
+- **Bordures** : Vérification MediaBox vs CropBox (texte hors marges)
 - **Rapport HTML** : Rapport interactif avec bouton d'impression/export PDF
 
 ## Installation
 
-### Dependances requises
+### Dépendances requises
 
 ```bash
 # macOS (Homebrew)
@@ -138,7 +138,7 @@ Le rapport contient :
 
 ## Ajouter une langue
 
-1. Creer `lib/i18n/de.sh` (copier `en.sh` comme base)
+1. Créer `lib/i18n/de.sh` (copier `en.sh` comme base)
 2. Renommer la fonction en `pf_init_translations_de`
 3. Traduire toutes les variables `T_*`
 4. Ajouter le cas dans `lib/i18n/loader.sh`
